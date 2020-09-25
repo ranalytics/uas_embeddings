@@ -3,4 +3,4 @@ This repository contains supporting materials for my talk "[Still parsing User A
 Two example R scripts stored in the `scripts` folder can be used to create unsupervised and supervied [fastText](https://fasttext.cc/docs/en/support.html)-based transformers for UAS. To run these scripts, one can use a sample dataset provided in the folder `data` (200K unique UAS extracted from the [whatismybrowser.com](https://www.whatismybrowser.com/) database).
 
 <br>
-_I provide Data Science consulting services. [Get in touch!](mailto:sergey@nextgamesolutions.com)_
+I provide Data Science consulting services. [Get in touch!](mailto:sergey@nextgamesolutions.com)
