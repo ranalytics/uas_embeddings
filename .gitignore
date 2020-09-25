@@ -1,0 +1,9 @@
+.Rproj.user
+css/*
+*_cache/*
+*_files/*
+models/*
+scratchpad/*
+workspaces/*
+www/*
+*.Rmd
