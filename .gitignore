@@ -2,6 +2,7 @@
 css/*
 *_cache/*
 *_files/*
+data/test_data_unsup.txt
 models/*
 scratchpad/*
 workspaces/*
