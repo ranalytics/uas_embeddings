@@ -1,7 +1,7 @@
 This repository contains supporting materials for my talk "[Still parsing User Agent Strings for your models? Use this instead!](https://github.com/WhyR2020/abstracts/blob/master/text_mining/still_parsing_user_agent_strings_for_your_models_use_this_instead.md)" presented at two events in 2020:
 
 * [Why R? Conference](https://2020.whyr.pl/) (see file `mastitsky_why_r_conference.html` in the project's root directory);
-* [EARL Conference](https://info.mango-solutions.com/earl-online-2020) (file `mastitsky_earl_conference.html`).
+* [EARL Conference](https://info.mango-solutions.com/earl-online-2020) (this deck is slightly different, see file `mastitsky_earl_conference.html`).
 
 Here is the abstract of this talk:
 
