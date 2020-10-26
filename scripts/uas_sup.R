@@ -2,6 +2,7 @@ require(tidyverse)
 require(reticulate)
 require(Rtsne)
 require(plotly)
+require(vroom)
 
 # Make sure `fasttext` is available to R:
 py_module_available("fasttext")
@@ -12,7 +13,7 @@ ft <- reticulate::import("fasttext")
 
 # ------ Load and prepare the data ------
 
-dat <- read_csv("data/sample_200k.zip")
+dat <- vroom::vroom("data/sample_200k.zip")
 
 # Normalise UAS to lower case, add labels, and split data into train and test sets:
 set.seed(42)
@@ -27,6 +28,11 @@ dat %>%
   filter(dataset == "train") %>% 
   pull(labeled_uas) %>% 
   writeLines(., "./data/train_data_sup.txt", useBytes = TRUE)
+
+dat %>% 
+  filter(dataset == "test") %>% 
+  pull(labeled_uas) %>% 
+  writeLines(., "./data/test_data_sup.txt", useBytes = TRUE)
 
 test_data <- dat %>% filter(dataset == "test")
 
@@ -66,6 +72,10 @@ m_sup <- ft$train_supervised(input = params$train_path,
 # Save the model for further use. It can be loaded later as follows:
 # m_sup <- ft$load_model(path = "./models/model_sup")
 m_sup$save_model(path = "./models/model_sup")
+
+# Check precision, recall and f1 score for individual labels, e.g.:
+metrics <- m_sup$test_label("./data/test_data_sup.txt")
+metrics["__label__mobile"]
 
 
 # Calculate embeddings for each UAS from the test set:

@@ -2,6 +2,7 @@ require(tidyverse)
 require(reticulate)
 require(Rtsne)
 require(plotly)
+require(vroom)
 
 # Make sure `fasttext` is available to R:
 py_module_available("fasttext")
@@ -11,7 +12,7 @@ ft <- reticulate::import("fasttext")
 
 # ------ Load and prepare the data ------
 
-dat <- read_csv("data/sample_200k.zip")
+dat <- vroom::vroom("data/sample_200k.zip")
 
 # Normalise UAS to lower case, add labels, and split data into train and test sets:
 set.seed(42)
