@@ -3,7 +3,7 @@ This repository contains supporting materials for my talk "[Still parsing User A
 * [Why R? Conference](https://2020.whyr.pl/) (see file `mastitsky_why_r_conference.html` in the project's root directory);
 * [EARL Conference](https://info.mango-solutions.com/earl-online-2020) (this deck is slightly different, see file `mastitsky_earl_conference.html`).
 
-I have also published a supplementary [article on Medium](https://mastitsky.medium.com/still-parsing-user-agent-strings-for-your-machine-learning-models-use-this-instead-8928c0e7e74f) on this topic.
+I have also published a supplementary [article at Medium](https://mastitsky.medium.com/still-parsing-user-agent-strings-for-your-machine-learning-models-use-this-instead-8928c0e7e74f) on this topic.
 
 Here is the abstract of that talk:
 
